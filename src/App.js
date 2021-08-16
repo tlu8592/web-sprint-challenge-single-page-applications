@@ -29,14 +29,6 @@ const App = () => {
   const [formErrors, setFormErrors] = useState(initialFormErrors)
   const [orders, setOrders] = useState([])
   const [disabled, setDisabled] = useState(false)
-  
-  // const getOrders = () => {
-  //     axios.get('https://reqres.in/api/orders')
-  //       .then(response => {
-  //         const newOrders = response.data
-  //         setNewOrders(newOrders)
-  //       })
-  // }
 
   const postNewOrder = newOrder => {
     axios.post('https://reqres.in/api/orders', newOrder)
